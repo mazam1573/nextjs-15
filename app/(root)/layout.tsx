@@ -7,6 +7,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <main className="background-light850_dark100 relative">
       <Navbar />
+      <div className="clear-both"></div>
       <div className="flex">
         <LeftSidebar />
 

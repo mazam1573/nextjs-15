@@ -19,7 +19,7 @@ const UserSchema = new Schema<IUser>({
     image: { type: String, required: true },
     location: { type: String },
     portfolio: { type: String },
-    reputation: { type: String },
+    reputation: { type: String, default: 0 },
 }, { timestamps: true });
 
 const User = models?.User || model<IUser>('User', UserSchema);
